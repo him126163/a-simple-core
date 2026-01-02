@@ -1,0 +1,205 @@
+<local:MyHint Theme="Yellow" Margin="0,0,0,15"
+            Text="福启新岁，万事顺遂！">
+</local:MyHint>
+
+<local:MyCard Title="欢迎来到KJminecraft服务器" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyImage Height="120" HorizontalAlignment="Center" Margin="0,0,0,12"
+                    Source="https://s3.bmp.ovh/imgs/2026/01/02/11c98b216127f26a.png" />
+        
+        <!-- 关于KJMinecraft的介绍 -->
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="14"
+                    Text="欢迎加入 KJMinecraft 服务器！ &#xA;KJMinecraft 服务器于 2025 年 4 月 19 日正式开服&#xA;是控江中学学生自主搭建、运行、维护的 Minecraft 原版生存服务器！面向广大上海中学生、毕业生长期开放！ " />
+        
+        <!-- 开放时间和世界种子放在同一行 -->
+        <Grid Margin="0,12,0,12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            
+            <!-- 左侧空白 -->
+            <StackPanel Grid.Column="0" Width="20" />
+            
+            <!-- 开放时间 -->
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center" Width="80">
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontWeight="Bold" Foreground="{DynamicResource ColorBrush2}"
+                            Text="🕐 开放时间" />
+                <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="12"
+                            Text="全天开放" />
+            </StackPanel>
+            
+            <!-- 分隔线 -->
+            <Rectangle Grid.Column="2" Width="1" Height="40" Fill="{DynamicResource ColorBrush4}" Margin="15,0,15,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            
+            <!-- 世界种子 -->
+            <StackPanel Grid.Column="3" HorizontalAlignment="Center" >
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold" Foreground="{DynamicResource ColorBrush2}"
+                            Text="                   🌱 世界种子" />
+                <local:MyButton Width="230" Height="35" HorizontalAlignment="Center" Padding="15,0,15,0"
+                            Text="1093987863245724770" EventType="复制文本" 
+                            EventData="1093987863245724770" 
+                            ToolTip="点我复制世界种子" />
+            </StackPanel>
+        </Grid>
+        
+        <!-- 温馨提示 -->
+        <local:MyHint Theme="Blue" Margin="0,0,0,12"
+                    Text="希望大家畅所欲言不逾矩～&#xA;在KJM中尽情发挥～&#xA;感受「玩在控江」的魅力！₍˄·͈༝·͈˄*₎" />
+        
+        <!-- 进入服务器按钮 -->
+        <local:MyButton Margin="0,0,0,8" Width="250" Height="40" HorizontalAlignment="Center" 
+                    ColorType="Highlight" Padding="35,0,35,0"
+                    Text="进入 KJminecraft 服务器" EventType="启动游戏" EventData="1.21.6-Fabric 0.18.2|awa.kjmc.top" 
+                    ToolTip="服务器地址：awa.kjmc.top&#xA;版本：1.21.6-Fabric 0.18.2" />
+        
+        <!-- 刷新页面按钮 -->
+        <!-- <local:MyButton Margin="0,0,0,0" Width="120" Height="35" HorizontalAlignment="Center"
+                    Text="刷新页面" EventType="刷新页面" EventData="-" 
+                    ToolTip="点击刷新当前页面" /> -->
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="启动前注意" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Theme="Red" Margin="0,0,0,12" 
+                    Text="⚠️ 重要！请仔细阅读以下注意事项" />
+        
+        <!-- 注意事项列表 -->
+        <StackPanel Margin="0,0,0,12">
+            <!-- 第1项 -->
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold"
+                        Text="🔐 1. 白名单验证机制" />
+            <TextBlock TextWrapping="Wrap" Margin="15,0,0,8"
+                        Text="为防止网络攻击，本服务器开启白名单验证机制。需先进入一次服务器并等待Piglli或椰羊奶将你的游戏名加入白名单中，也可以提前进群申请。" />
+            
+            <!-- 第2项 -->
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold"
+                        Text="🔑 2. 登录密码设置" />
+            <TextBlock TextWrapping="Wrap" Margin="15,0,0,4"
+                        Text="初次进入服务器后，需要您设置自己的登录密码。" />
+            
+            <StackPanel Margin="15,0,0,8">
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,2"
+                            Text="• 注册密码命令：" />
+                <local:MyHint Theme="Yellow" Margin="5,2,5,4"
+                            Text="/register 密码 密码" />
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,2"
+                            Text="• 登录密码命令：" />
+                <local:MyHint Theme="Blue" Margin="5,2,5,4"
+                            Text="/login 密码 或 /l 密码" />
+            </StackPanel>
+            
+            <TextBlock TextWrapping="Wrap" Margin="15,0,0,0"
+                        Text="设置后，每次进入服务器只需使用登录命令即可。" />
+        </StackPanel>
+        
+        <!-- 第3项：设置皮肤 -->
+        <StackPanel Margin="0,0,0,12">
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold"
+                        Text="👤 3. （可选）设置皮肤" />
+            <TextBlock TextWrapping="Wrap" Margin="15,0,0,8"
+                        Text="以离线方式或第三方登录，可以到Littleskin设置皮肤" />
+            
+            <!-- Littleskin按钮 -->
+            <local:MyButton Margin="15,0,15,8" Width="200" Height="35" HorizontalAlignment="Center"
+                        Text="点我打开Littleskin" EventType="打开网页" 
+                        EventData="https://littleskin.cn/?lang=zh_CN" 
+                        ToolTip="点击打开Littleskin皮肤站" />
+            
+            <TextBlock TextWrapping="Wrap" Margin="15,0,0,4"
+                        Text="使用正版账号登录" />
+            
+            <!-- Minecraft官网皮肤编辑按钮 -->
+            <local:MyButton Margin="15,0,15,0" Width="200" Height="35" HorizontalAlignment="Center"
+                        Text="点我打开Minecraft官网" EventType="打开网页" 
+                        EventData="https://www.minecraft.net/zh-hans/msaprofile/mygames/editskin" 
+                        ToolTip="点击打开Minecraft官方皮肤编辑页面" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="服务器Mod一览" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,12" FontWeight="Bold"
+                    Text="服务器已安装以下Mod，点击名称查看详情：" />
+        
+        <!-- Mod列表 -->
+        <StackPanel Margin="0,0,0,12">
+            <!-- 1. MiniHUD -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                <TextBlock TextWrapping="Wrap" Width="100" FontWeight="Bold"
+                            Text="1. MiniHUD：" />
+                <local:MyTextButton 
+                            Text="查看详情" EventType="打开网页" 
+                            EventData="https://www.mcmod.cn/class/2311.html" 
+                            ToolTip="点击打开介绍页面" />
+            </StackPanel>
+            
+            <!-- 2. Tweakeroo -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                <TextBlock TextWrapping="Wrap" Width="100" FontWeight="Bold"
+                            Text="2. Tweakeroo：" />
+                <local:MyTextButton 
+                            Text="查看详情" EventType="打开网页" 
+                            EventData="https://www.mcmod.cn/class/2230.html" 
+                            ToolTip="点击打开介绍页面" />
+            </StackPanel>
+            
+            <!-- 3. Litematica -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                <TextBlock TextWrapping="Wrap" Width="100" FontWeight="Bold"
+                            Text="3. Litematica：" />
+                <local:MyTextButton 
+                            Text="查看详情" EventType="打开网页" 
+                            EventData="https://www.mcmod.cn/class/2261.html" 
+                            ToolTip="点击打开介绍页面" />
+            </StackPanel>
+            
+            <!-- 4. Xaero's Minimap -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                <TextBlock TextWrapping="Wrap" Width="100" FontWeight="Bold"
+                            Text="4. Xaero's Minimap：" />
+                <local:MyTextButton 
+                            Text="查看详情" EventType="打开网页" 
+                            EventData="https://www.mcmod.cn/class/1701.html" 
+                            ToolTip="点击打开介绍页面" />
+            </StackPanel>
+            
+            <!-- 5. Item Scroller -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                <TextBlock TextWrapping="Wrap" Width="100" FontWeight="Bold"
+                            Text="5. Item Scroller：" />
+                <local:MyTextButton 
+                            Text="查看详情" EventType="打开网页" 
+                            EventData="https://www.mcmod.cn/class/1529.html" 
+                            ToolTip="点击打开介绍页面" />
+            </StackPanel>
+        </StackPanel>
+        
+        <!-- 打开Mod文件夹按钮 -->
+        <local:MyButton Margin="0,0,0,0" Width="180" Height="35" HorizontalAlignment="Center" ColorType="Highlight"
+                    Text="打开Mods文件夹" EventType="打开文件" 
+                    EventData="{path}\.minecraft\" 
+                    ToolTip="点击打开服务器Mods文件夹" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="还有其他问题？" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <!-- 图标和文字 -->
+        <StackPanel HorizontalAlignment="Center" Margin="0,0,0,12">
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,8" HorizontalAlignment="Center"
+                        FontSize="16" FontWeight="Bold"
+                        Text="📖 需要更多帮助？" />
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center"
+                        Text="查看更详细的文档" />
+        </StackPanel>
+        
+        <!-- 文档链接按钮 -->
+        <local:MyButton Margin="0,0,0,0" Width="240" Height="45" HorizontalAlignment="Center" 
+                    ColorType="Highlight" Padding="35,0,35,0"
+                    Text="🔗 打开详细帮助文档" EventType="打开网页" 
+                    EventData="https://docs.qq.com/pdf/DVEhnV0VqT3NCYWRO" 
+                    ToolTip="点击打开详细帮助文档（腾讯文档）" />
+    </StackPanel>
+</local:MyCard>

@@ -39,8 +39,8 @@
                 <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold" Foreground="{DynamicResource ColorBrush2}"
                             Text="                   🌱 世界种子" />
                 <local:MyButton Width="230" Height="35" HorizontalAlignment="Center" Padding="15,0,15,0"
-                            Text="1093987863245724770" EventType="复制文本" 
-                            EventData="1093987863245724770" 
+                            Text="-1093987863245724770" EventType="复制文本" 
+                            EventData="-1093987863245724770" 
                             ToolTip="点我复制世界种子" />
             </StackPanel>
         </Grid>
@@ -204,3 +204,4 @@
     </StackPanel>
 
 </local:MyCard>
+

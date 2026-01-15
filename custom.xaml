@@ -1,5 +1,5 @@
 <local:MyHint Theme="Yellow" Margin="0,0,0,15"
-            Text="福启新岁，万事顺遂！">
+            Text="爆竹声中一岁除，东风送暖入屠苏">
 </local:MyHint>
 
 <local:MyCard Title="欢迎来到KJminecraft服务器" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
@@ -204,4 +204,5 @@
     </StackPanel>
 
 </local:MyCard>
+
 
